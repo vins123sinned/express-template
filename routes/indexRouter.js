@@ -1,7 +1,8 @@
 import { Router } from "express";
+import { getHomePage } from "../controllers/indexController.js";
 
 const indexRouter = Router();
 
-indexRouter.get("/", (req, res) => res.send("Hey! Welcome to the index!"));
+indexRouter.get("/", getHomePage);
 
 export { indexRouter };
