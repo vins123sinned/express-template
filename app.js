@@ -7,7 +7,7 @@ const app = express();
 app.use("/", indexRouter);
 app.use((err, req, res, next) => {
   console.error(err);
-  res.status(500).send(err);
+  res.status(err.statusCode || 500).send(err);
 });
 
 const PORT = process.env.PORT || 3000;
