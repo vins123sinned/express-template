@@ -1,9 +1,10 @@
 import express from "express";
+import { indexRouter } from "./routes/indexRouter.js";
 import "dotenv/config";
 
 const app = express();
 
-app.get("/", (req, res) => res.send("home"));
+app.use("/", indexRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, (error) => {
