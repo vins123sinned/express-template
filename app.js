@@ -9,6 +9,10 @@ const app = express();
 app.set("views", path.join(import.meta.dirname, "views"));
 app.set("view engine", "ejs");
 
+// set path of static assets
+const assetsPath = path.join(import.meta.dirname, "public");
+app.use(express.static(assetsPath));
+
 app.use("/", indexRouter);
 app.use((err, req, res, next) => {
   console.error(err);
