@@ -7,7 +7,7 @@ const getHomePage = (req, res) => {
     throw new CustomNotFoundError("Index page not found");
   }
 
-  res.send("Hey! This is the homepage!");
+  res.render("index", { heading: "Welcome to the homepage." });
 };
 
 export { getHomePage };

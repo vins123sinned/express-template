@@ -1,8 +1,13 @@
 import express from "express";
+import path from "path";
 import { indexRouter } from "./routes/indexRouter.js";
 import "dotenv/config";
 
 const app = express();
+
+// set EJS as view engine and where to look for the view files
+app.set("views", path.join(import.meta.dirname, "views"));
+app.set("view engine", "ejs");
 
 app.use("/", indexRouter);
 app.use((err, req, res, next) => {
