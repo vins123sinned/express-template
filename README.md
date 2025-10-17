@@ -1,6 +1,6 @@
 # express-skeleton
 
-An Express.js template built along with [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs) to jumpstart any Express project. This directory will already have installed the necessary packages, set up the Model-View-Controller design pattern, and make it easy to create and link your PostgreSQL database. Authentication currently not included but will be in the future.
+An Express.js template built along with [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs) to jumpstart any Express project. This directory will already have installed the necessary packages, set up the Model-View-Controller design pattern, and make it easy to create and link your PostgreSQL database. Form validation and authentication currently not included but will be in the future.
 
 ## Installation
 
