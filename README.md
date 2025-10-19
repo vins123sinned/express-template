@@ -36,4 +36,11 @@ node --watch app.js
 
 And enjoy!
 
+## Linting and Formatting
+
+Linting and formatting isn't installed here because they can be configured differently depending on the project's need. Therefore, consult ESLint and Prettier's documentation to see how to install and run them on your project! It is HIGHLY recommended and will help you make your code much more readable and maintainable.
+
+- [ESLint Quick Start Guide](https://eslint.org/docs/latest/use/getting-started)
+- [Prettier's Install Documentation](https://prettier.io/docs/install.html)
+
 
